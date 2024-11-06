@@ -29,7 +29,7 @@ public class AlumnoController {
         return ResponseEntity.ok().body(ob.get());
    }
 
-   @PostMapping
+   @PostMapping("/crear")
     public ResponseEntity<?> crear(@RequestBody Alumno alumno){
         Alumno alumnoDb = service.save(alumno);
         return ResponseEntity.status(HttpStatus.CREATED).body(alumnoDb);
