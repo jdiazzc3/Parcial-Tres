@@ -1,14 +1,15 @@
 package com.co.diaz.libreria.service;
 
-import com.co.diaz.usuario.entity.usuarios.entity.Alumno;
-import com.co.diaz.usuario.entity.usuarios.repository.AlumnoRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
-public class CommonServiceImpl<E, R extends CrudRepository<E, Long>> implements CommonService{
+@Service
+public class CommonServiceImpl<E, R extends CrudRepository<E, Long>> implements CommonService <E>{
 
     @Autowired
     private R dao;

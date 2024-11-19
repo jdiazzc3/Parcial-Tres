@@ -1,6 +1,6 @@
 package com.co.diaz.usuario.entity.usuarios.service;
 
-import com.co.diaz.usuario.entity.usuarios.entity.Alumno;
+import com.co.diaz.commonservice.models.entity.Alumno;
 import com.co.diaz.usuario.entity.usuarios.repository.AlumnoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
