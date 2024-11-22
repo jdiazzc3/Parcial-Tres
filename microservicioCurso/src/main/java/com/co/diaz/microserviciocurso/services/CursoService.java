@@ -1,7 +1,5 @@
-package com.co.diaz.curso.services;
-
+package com.co.diaz.microserviciocurso.services;
 import com.co.diaz.commonservice.models.entity.Curso;
-import com.co.diaz.libreria.service.CommonService;
 import org.springframework.stereotype.Service;
 
 @Service

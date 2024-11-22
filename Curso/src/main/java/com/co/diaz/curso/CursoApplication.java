@@ -8,7 +8,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableDiscoveryClient
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages ={
+        "com.co.diaz.commonservice.models.entity",
+        "com.co.diaz.curso.models.entity"})
 @ComponentScan({"com.co.diaz.commonservice.models.entity","com.co.diaz.curso.models.entity"})
 @EnableJpaRepositories({"com.co.diaz.commonservice.models.entity","com.co.diaz.curso.models.entity"})
 @EntityScan({"com.co.diaz.commonservice.models.entity","com.co.diaz.curso.models.entity.*"})

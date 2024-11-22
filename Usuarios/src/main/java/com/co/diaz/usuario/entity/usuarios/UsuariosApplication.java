@@ -9,10 +9,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 //src/main/java/com/co/diaz/commonservice/models.entity
 @EnableDiscoveryClient
-@SpringBootApplication
-@ComponentScan({"com.co.diaz.commonservice.models.entity"})
-@EnableJpaRepositories({"com.co.diaz.commonservice.models.entity"})
-@EntityScan({"com.co.diaz.commonservice.models.entity"})
+@SpringBootApplication(scanBasePackages ={
+        "com.co.diaz.commonservice.models.entity",
+        "com.co.diaz.usuario.entity.usuarios.*"})
+@ComponentScan({"com.co.diaz.commonservice.models.entity","com.co.diaz.usuario.entity.usuarios.*"})
+@EnableJpaRepositories({"com.co.diaz.commonservice.models.entity","com.co.diaz.usuario.entity.usuarios.*"})
+@EntityScan({"com.co.diaz.commonservice.models.entity","com.co.diaz.usuario.entity.usuarios.*"})
 public class UsuariosApplication {
 
     public static void main(String[] args) {

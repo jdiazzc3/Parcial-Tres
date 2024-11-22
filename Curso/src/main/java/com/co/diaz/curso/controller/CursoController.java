@@ -1,7 +1,7 @@
 package com.co.diaz.curso.controller;
 
 import com.co.diaz.commonservice.models.entity.Alumno;
-import com.co.diaz.curso.models.entity.Curso;
+import com.co.diaz.commonservice.models.entity.Curso;
 import com.co.diaz.curso.services.CursoService;
 import com.co.diaz.libreria.controller.CommonController;
 import org.springframework.beans.factory.annotation.Value;
