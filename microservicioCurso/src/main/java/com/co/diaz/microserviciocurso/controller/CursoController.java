@@ -1,13 +1,13 @@
-package com.co.diaz.curso.controller;
+package com.co.diaz.microserviciocurso.controller;
 
-import com.co.diaz.commonservice.models.entity.Alumno;
-import com.co.diaz.commonservice.models.entity.Curso;
-import com.co.diaz.curso.services.CursoService;
 import com.co.diaz.libreria.controller.CommonController;
+import com.co.diaz.microserviciocurso.services.CursoService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.co.diaz.commonservice.models.entity.Alumno;
+import com.co.diaz.commonservice.models.entity.Curso;
 
 import java.util.List;
 import java.util.Optional;

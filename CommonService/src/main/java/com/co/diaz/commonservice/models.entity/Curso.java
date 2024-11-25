@@ -1,4 +1,4 @@
-package com.co.diaz.curso.models.entity;
+package com.co.diaz.commonservice.models.entity;
 
 import com.co.diaz.commonservice.models.entity.Alumno;
 import jakarta.persistence.*;
