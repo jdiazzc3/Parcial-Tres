@@ -33,7 +33,7 @@ public class CommonController<E, S extends CommonService<E>> {
         return ResponseEntity.ok().body(service.findAll());
     }
 
-    @GetMapping("/")
+    @GetMapping("/{id}")
     public ResponseEntity<?> ver(@PathVariable Long id) {
         Optional<E> ob = service.findById(id);
         if (ob.isEmpty()) {
